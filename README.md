@@ -11,12 +11,12 @@ Current public project: AI Agent Launch Pack
 - [Supabase grant migration builder](https://ai-launch-risk-check-public.vercel.app/supabase-grant-migration-builder.html) - generate a redacted explicit-grants migration skeleton and role-matrix test packet.
 - [Supabase anonymous RLS matrix](https://ai-launch-risk-check-public.vercel.app/supabase-anonymous-rls-audit.html) - review redacted policies for anonymous sign-in drift where temporary users still use the `authenticated` role.
 - [AI Agent Launch Pack](https://ai-launch-risk-check-public.vercel.app/) - a $25 launch-safety kit for one tool-using AI workflow, MCP server, browser automation flow, or customer-visible agent action.
-- [AI Agent Launch Tools v0.1.28](https://github.com/kayalopez/ai-agent-launch-tools/releases/tag/v0.1.28) - dependency-free public scanner and CLIs for AI-agent, MCP, and Supabase launch hygiene.
+- [AI Agent Launch Tools v0.1.29](https://github.com/kayalopez/ai-agent-launch-tools/releases/tag/v0.1.29) - dependency-free public scanner and CLIs for AI-agent, MCP, and Supabase launch hygiene, including db pull generated REVOKE replay checks.
 
 Run the Supabase grants cutover check on redacted SQL, generated migration notes, or `42501` errors:
 
 ```bash
-npx --package github:kayalopez/ai-agent-launch-tools#v0.1.28 supabase-grants-cutover --file supabase_grants.redacted.sql --fail-on high
+npx --package github:kayalopez/ai-agent-launch-tools#v0.1.29 supabase-grants-cutover --file supabase_grants.redacted.sql --fail-on high
 ```
 
 The public tools are designed to run without secrets, customer records, private screenshots, payment data, connection strings, or service-role keys.
