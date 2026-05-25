@@ -6,6 +6,7 @@ Current public project: AI Agent Launch Pack
 
 - [Supabase Launch Risk Report](https://ai-launch-risk-check-public.vercel.app/supabase-launch-risk-report.html) - a $25, fixed-scope 24-hour report for one redacted Supabase grants/RLS/RPC packet.
 - [Supabase API grants checker](https://ai-launch-risk-check-public.vercel.app/supabase-api-grants-readiness.html) - separate Data API `42501` grant failures, `supabase db reset` replay gaps, and RLS policy problems before the May 30 / October 30 rollout.
+- [Supabase db pull REVOKE replay checker](https://ai-launch-risk-check-public.vercel.app/supabase-db-pull-revoke-replay.html) - review generated `REVOKE` blocks and local reset replay before broad-granting around `42501`.
 - [Supabase Data API grants deadline checklist](https://github.com/kayalopez/ai-agent-launch-tools/blob/main/checklists/supabase-data-api-grants-deadline-checklist.md) - review generated migrations, Lovable/v0-style Supabase apps, local replay behavior, and new tables before missing grants or broad fixes create launch risk.
 - [Supabase grant migration builder](https://ai-launch-risk-check-public.vercel.app/supabase-grant-migration-builder.html) - generate a redacted explicit-grants migration skeleton and role-matrix test packet.
 - [Supabase anonymous RLS matrix](https://ai-launch-risk-check-public.vercel.app/supabase-anonymous-rls-audit.html) - review redacted policies for anonymous sign-in drift where temporary users still use the `authenticated` role.
